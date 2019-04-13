@@ -13,11 +13,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "table.html"));
+  res.sendFile(path.join(__dirname, "tables.html"));
 });
 
 app.get("/table", function(req, res) {
-  res.sendFile(path.join(__dirname, "table.html"));
+  res.sendFile(path.join(__dirname, "tables.html"));
 });
 
 
